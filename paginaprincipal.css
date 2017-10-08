@@ -1,4 +1,7 @@
-
+html{
+    position: relative; 
+    min-height: 100%;
+}
 
 header{
 	
@@ -12,7 +15,7 @@ body{
 
 background-color: rgba(255,173,100,0.65);
 font-family: Arial, sans-serif;
-
+margin: 0 0 30px; /*los 30 px justo va a ser lo que ocupa el footer, NO CAMBIAR*/
 }
 
 nav{
@@ -103,10 +106,10 @@ footer {
 	
 	font-family: Georgia, serif;
 	
-	padding-top:1%;
-	margin-top:1%;
-	padding-bottom:1%;
-	margin-bottom:1%
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 30px;
 	
 }
 
@@ -178,6 +181,14 @@ legend{
 
 .infofoto a{
 	color: black;
+}
+
+
+input[type=date]{
+	
+	width: 168px; /*puesto a pelo, es de la única manera que quedan bien los inputs date*/
+	
+	
 }
 
 
