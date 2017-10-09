@@ -28,19 +28,21 @@
 		
 <!-- el formulario para el login -->
 	
-		<form name="login" action="index-registrado.html">
-			
+		<form name="login" id="login" action="index-registrado.html">
+			<fieldset>
+				<legend>Iniciar sesión</legend>
 			<p>
-				<label for="usuario">Usuario:</label> <input type="text" id="usuario" required  >
+				<label for="usuario" id="usu">Usuario:</label> <input type="text" id="usuario" required  >
 			</p>
 			<p>
-				<label for="contra">Contraseña:</label> <input type="password" name="contraseña" id="contra" required>
+				<label for="contra" id="ps">Contraseña:</label> <input type="password" name="contraseña" id="contra" required>
 			</p>
 			
 				<input type="submit" id="entrar" class="centrado" value="Entrar">
+			</fieldset>
 		</form>
 	
-
+			<h2>Entra y comparte tus fotos</h2>
 
 			<div class="imagen">
 			<a href="detallefoto.html"><img src="paisaje1.jpg" alt="Paseo otoñal"></a>
