@@ -1,75 +1,85 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
-<head>
-	<meta charset="UTF-8"/>
+	<head>
 
-	<title>PISCY-Menu usuario registrado</title>
-</head>
+		<meta charset="UTF-8"/>
+		<title>PISCY-Menu usuario registrado</title>
+		<link rel="stylesheet" type="text/css" href="paginaprincipal.css">
 
-<body>
-	<header>
+	</head>
+
+	<body>
+
+		<header>
+			
+			<a href="index-registrado.html"><img src="logo.png" id="logo" alt="Logotipo de PICSY"></a>
+			
+		</header>
 		
-		<a href="index-registrado.html"><img src="picsy.png" alt="Logotipo de PICSY"></a>
-		<p>
-        <button type="button" name="Mis albumes">Mis albumes</button>
-        <button type="button" name="Crear album">Crear album</button>
-		</p>
-		<p><a href="paginaSolicitarAlbum.html">Solicitar album</a></p>
-		<p><a href="index.html">Cerrar sesión</a></p>
-	</header>
-	
-	<main>
-	
-	<fieldset>
-		<legend><h2>Datos del usuario</h2></legend>
+		<main>
+
+			<section>
+				<ul class=navegacion>
+					<li><a href="paginaSolicitarAlbum.html">Solicitar album</a></li>
+					<li><a href="index.html">Cerrar sesión</a></li>
+				</ul>
+
+				<p class="contenedorb">
+					<input type="submit" value="Mis albumes">
+					<input type="submit" value="Crear Album">
+				</p>
+			</section>
+
+			<fieldset>
+				<legend id="iniciarsesion">Datos de usuario</legend>
+				
+				<img src="fotousuario.jpg" alt="Imagen Usuario" id="fotousuario">
+
+				<br>
+
+				<form>
+					<label for="editar"><b>Editar foto de perfil:</b></label>
+					<input name="imagen" type="file" id="editar" />
+					<input name="subir" type="submit" value="subir"/>
+				</form>
+
+				<p>
+					<b>Nombre:</b> Pepito Morales
+				</p>
+				<p>
+					<b>Correo electrónico:</b> pepitomorales@yopmail.com
+		    	</p>
+				<p>
+					<b>Edad:</b> 103
+				</p>
+				<p>
+					<b>Pais:</b> España
+		    	</p>
+				<p>
+					<b>Ciudad:</b> Alicante
+		   		</p>
+				<p>
+					<b>Sexo:</b> Hombre
+		    	</p>
+				<p>
+					<b>Nacimiento:</b> 22/01/1915
+		    	</p>
+
+				<p>
+					<input type="submit" class="centrado" value="Modificar datos">
+					<input type="submit" class="centrado" value="Darse de baja">
+				</p>
+			</fieldset>
+			
+		</main>
+			
+		<footer>
+			&copy; Blanca Vázquez Paredes y Yolanda Cruz Girona
+		</footer>
 		
-		<img src="fotousuario.jpg" alt="Imagen Usuario">
-	<p>
-		Nombre: Pepito Morales
-	</p>
-	<p>
-		Correo electrónico: pepitomorales@yopmail.com
-    </p>
-	<p>
-		Edad: 103
-	</p>
-	<p>
-		Pais: España
-    </p>
-	<p>
-		Ciudad: Alicante
-    </p>
-	<p>
-		Sexo: Hombre
-    </p>
-	<p>
-		Nacimiento: 22/01/1915
-    </p>
-	
-	 
-		<form>
-		
-		<label for="editar">Editar foto de perfil:</label>
-			<input name="imagen" type="file" id="editar" />
-			<input name="subir" type="submit" value="subir"/>
-		</form>
-	</fieldset>
-	
-	<p>
-	<button type="button" name="Modificar Datos">Modificar Datos</button>
-	<button type="button" name="Darse de baja">Darse de baja</button>
-	</p>
-	
-	</main>
-	
-	<footer>
-		<p>
-		&copy; Blanca Vázquez Paredes y Yolanda Cruz Girona
-		</p>
-	</footer>
-	
-</body>
+	</body>
 
 </html>
 	

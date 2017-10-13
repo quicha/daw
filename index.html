@@ -12,83 +12,66 @@
 
 
 	<body>
+
 		<header>
-		<a href="index.html"><img src="picsy.png" alt="Logotipo de PICSY"></a>
+
+			<a href="index.html"><img id="logo" src="logo.png" alt="Logotipo de PICSY"></a>
+
 		</header>
-		
-		
-<!--los enlaces que dice que tiene que tener la página principal-->
-		
-		<!-- barra de navegación horizontal-->
-		
-		<ul class=horizontal>
-			<li><a href="registro.html">Regístrate</a></li>
-			<li><a href="busqueda.html">Búsqueda avanzada</a></li>
-		</ul>
-		
-<!-- el formulario para el login -->
+
+		<section>
+
+			<ul class="navegacion">
+			
+				<li>
+				
+				
+				<form id="contenedorb">
+					<input type="text" name="search" placeholder="Buscar...">
+					<input type="submit" name="buscar" value="Buscar" >
+				</form>
+				
+				
+				</li>
+				<li><a href="busqueda.html">Búsqueda avanzada</a></li>
+				<li><a href="registro.html">Regístrate</a></li>
+			</ul>
+
+		</section>
+
+		<h2 class="titulos">¡Entra y comparte tus fotos!</h2>
+		<section class="formulario">
+			<form name="login" id="login" action="index-registrado.html">
+				<fieldset>
+					<legend id="iniciarsesion">Iniciar sesión</legend>
+					<p>
+					<label for="usuario" id="usu">Usuario:</label> <input type="text" id="usuario" required  >
+					</p>
+					<p>
+					<label for="contra" id="ps">Contraseña:</label> <input type="password" name="contraseña" id="contra" required>
+					</p>
+			
+					<input type="submit" id="entrar" class="centrado" value="Entrar">
+				</fieldset>
+			</form>
+		</section>
+
+
 	
-		<form name="login" id="login" action="index-registrado.html">
-			<fieldset>
-				<legend>Iniciar sesión</legend>
-			<p>
-				<label for="usuario" id="usu">Usuario:</label> <input type="text" id="usuario" required  >
-			</p>
-			<p>
-				<label for="contra" id="ps">Contraseña:</label> <input type="password" name="contraseña" id="contra" required>
-			</p>
-			
-				<input type="submit" id="entrar" class="centrado" value="Entrar">
-			</fieldset>
-		</form>
-	
-			<h2>Entra y comparte tus fotos</h2>
 
-			<div class="imagen">
-			<a href="detallefoto.html"><img src="paisaje1.jpg" alt="Paseo otoñal"></a>
-			<p>El Otoño, 22/09/2017, San Petersburgo</p>
-			</div>
-			
+	 		<ul class="foticos">
+			    <li><a href="detallefoto.html"><img src="paisaje1.jpg" alt="Paseo otoñal" /></a><p><b>Paseo otoñal</b></p><p>25/11/2015,Bélgica</p></li>
+			    <li><a href="detallefoto.html"><img src="paisaje2.jpg" alt="Montañas" /></a><p><b>Paseo otoñal</b></p><p>25/11/2015,Bélgica</p></li>
+			    <li><a href="detallefoto.html"><img src="paisaje3.jpg" alt="Paisaje al atardecer" /></a><p><b>Paseo otoñal</b></p><p>25/11/2015, Bélgica</p></li>
+			    <li><a href="detallefoto.html"><img src="paisaje4.jpg" alt="Ladera verde" /></a><p><b>Paseo otoñal</b></p><p>25/11/2015,Bélgica</p></li>
+			    <li><a href="detallefoto.html"><img src="paisaje5.jpg" alt="Playa al amanecer"/></a><p><b>Paseo otoñal</b></p><p>25/11/2015,Bélgica</p></li>
+		 	</ul>
 		
-
-		
-			<div class="imagen">
-			<a href="detallefoto.html"><img src="paisaje2.jpg" alt="Montañas"></a>
-			<p>El mar y sus maravillas,22/09/2017, Santander </p>
-			</div>
-			
-
-		
-
-			<div class="imagen">
-			<a href="detallefoto.html"><img src="paisaje3.jpg" alt="Paisaje al atardecer"></a>
-			<p>Atardece, 22/10/2017, Gijón</p>
-			</div>
-			
-
-		
-			<div class="imagen">
-			<a href="detallefoto.html"><img src="paisaje4.jpg" alt="Paisaje con lago y montañas"></a>
-			<p>Ríos y montañas, 25/09/2017, Picos de Europa</p>
-			</div>
-	
-			
-			<div class="imagen">
-			<a href="detallefoto.html"><img src="paisaje5.jpg" alt="Ladera verde"></a>
-			<p>Transilvania en estado puro, 28/09/2017, Montes Cárpatos</p>
-			</div>
-			
-	
-	<footer>
-	
-	&copy; Blanca Vázquez Paredes y Yolanda Cruz Girona
-	</footer>
-		
-
-
+		<p>&nbsp;</p>
+		<footer>
+			&copy; Blanca Vázquez Paredes y Yolanda Cruz Girona
+		</footer>
 
 	</body>
-
-
 
 </html>

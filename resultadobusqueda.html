@@ -1,89 +1,62 @@
 <!DOCTYPE HTML>
+
 <html lang="es">
+
 	<head>
 
 		<meta charset="utf-8" />
 		<title>PICSY-Resultado de búsqueda</title>
 		<link rel="stylesheet" type="text/css" href="paginaprincipal.css">
+
 	</head>
 
-
 	<body>
+
 		<header>
-			<a href="index.html"><img src="picsy.png" alt="Logotipo de PICSY"></a>
-			
+
+			<a href="index.html"><img src="logo.png" id="logo" alt="Logotipo de PICSY"></a>
+
 		</header>
+
 		<form name="busqueda" action="resultadobusqueda.html">
 			<fieldset>
-				<legend>Criterio de búsqueda</legend>
+				<legend id="iniciarsesion">Criterio de búsqueda</legend>
 					<p>
-					<label for="titulo">Título:</label> <input type="text" id="titulo"  >
+						<label for="titulo">Título:</label> <input type="text" id="titulo"  >
+					</p>
+					<p>
+						<label for="desde">Fecha entre:</label> <input type="date" name="fecha" id="desde"  /> 
+					</p>
+					<p>
+						<label for="hasta">y:</label><input type="date" name="fecha" id="hasta"  />
+					</p>
+					<p>
+						<label for="pais">País :</label> <input type="text" id="pais">
 					</p>
 
 					<p>
-					<label for="desde">Fecha entre:</label> <input type="date" name="fecha" id="desde"  /> 
-					</p>
-					<p>
-					<label for="hasta">y:</label><input type="date" name="fecha" id="hasta"  />
-					</p>
-					<p>
-					<label for="pais">País :</label> <input type="text" id="pais">
-					</p>
-
-					<p>
-
-					<input type="submit" value= "Buscar" class="centrado">
-
+						<input type="submit" value= "Buscar" class="centrado">
 					</p>
 			</fieldset>
 		</form>
 		
 		
+		<br>
+
+		<h2 class="titulos">Resultado de búsqueda</h2>
+			
+	 	<ul>
+			<li><a href="detallefoto.html"><img src="paisaje1.jpg" alt="Paseo otoñal" /></a><p><b>Paseo otoñal</b></p><p>25/11/2015</p><p>Bélgica</p></li>
+			<li><a href="detallefoto.html"><img src="paisaje2.jpg" alt="Montañas" /></a><p><b>Paseo otoñal</b></p><p>25/11/2015</p><p>Bélgica</p></li>
+			<li><a href="detallefoto.html"><img src="paisaje3.jpg" alt="Paisaje al atardecer" /></a><p><b>Paseo otoñal</b></p><p>25/11/2015</p><p>Bélgica</p></li>
+			<li><a href="detallefoto.html"><img src="paisaje4.jpg" alt="Ladera verde" /></a><p><b>Paseo otoñal</b></p><p>25/11/2015</p><p>Bélgica</p></li>
+			<li><a href="detallefoto.html"><img src="paisaje5.jpg" alt="Playa al amanecer"/></a><p><b>Paseo otoñal</b></p><p>25/11/2015</p><p>Bélgica</p></li>
+		 </ul>
 				
-			<h3>Resultado de búsqueda</h3>
-			
-			
-			
-			<!--Supongo que para que salgan segun los criterios de busqueda todavia no hace falta??-->
-			<div class="imagen">
-			<a href="detallefoto.html"><img src="paisaje1.jpg" alt="Paseo otoñal"></a>
-			<p>El Otoño, 22/09/2017, San Petersburgo</p>
-			</div>
-			
+		<footer>
+			&copy; Blanca Vázquez Paredes y Yolanda Cruz Girona
+		</footer>
 		
+	</body>
 
-		
-			<div class="imagen">
-			<a href="detallefoto.html"><img src="paisaje2.jpg" alt="Montañas"></a>
-			<p>El mar y sus maravillas,22/09/2017, Santander </p>
-			</div>
-			
-
-		
-
-			<div class="imagen">
-			<a href="detallefoto.html"><img src="paisaje3.jpg" alt="Paisaje al atardecer"></a>
-			<p>Atardece, 22/10/2017, Gijón</p>
-			</div>
-			
-
-		
-			<div class="imagen">
-			<a href="detallefoto.html"><img src="paisaje4.jpg" alt="Paisaje con lago y montañas"></a>
-			<p>Ríos y montañas, 25/09/2017, Picos de Europa</p>
-			</div>
-	
-			
-			<div class="imagen">
-			<a href="detallefoto.html"><img src="paisaje5.jpg" alt="Ladera verde"></a>
-			<p>Transilvania en estado puro, 28/09/2017, Montes Cárpatos</p>
-			</div>
-				
-				
-			<footer>
-				&copy; Blanca Vázquez Paredes y Yolanda Cruz Girona
-			
-			</footer>
-			
-		</body>
 </html>

@@ -1,9 +1,12 @@
 <!DOCTYPE HTML>
+
 <html lang="es">
 
 	<head>
+
 		<meta charset="utf-8" />
 		<title>PICSY-Registro</title>
+		<link rel="stylesheet" type="text/css" href="paginaprincipal.css">
 		
 	</head>
 
@@ -11,13 +14,16 @@
 	<body>
 
 		<header>
-			<a href="index.html"><img src="picsy.png" alt="Logotipo de PICSY"></a>
-			<h2>Registro del usuario</h2>
+
+			<a href="index.html"><img src="logo.png" id="logo" alt="Logotipo de PICSY"></a>
+
 		</header>
+
+		<h2 class="titulos">Registro</h2>
 
 		<form name="registro" action="index-registrado.html">
 			<fieldset>
-				<legend>Datos de usuario</legend>
+				<legend id="iniciarsesion">Datos de usuario</legend>
 				<p>
 					<label for="nombre">Nombre de usuario:</label> <input type="text" id="nombre" required  >
 				</p>
@@ -28,10 +34,13 @@
 					<label for="repetir">Repetir contraseña:</label> <input type="password" name="contraseña2" id="repetir" required>
 				</p>
 				<p>
-					<label for="correo">Email:</label> <input type="email" placeholder="miusuario@hotmail.com" id="correo" required >
+					<label for="correo" id="email">Email:</label> <input type="email" placeholder="miusuario@hotmail.com" id="correo" required >
 				</p>
+				
 				<p>
 					Sexo:
+				</p>
+				<p>
 					<label>Hombre<input type="radio" name="gender" value="male" checked required > </label> 
 					<label>Mujer<input type="radio" name="gender" value="female" required > </label>
 				</p>
@@ -45,12 +54,10 @@
 					<label for="pais">País :</label> <input type="text" id="pais" required>
 				</p>
 				<p>
-					<label for="foto">Foto de perfil</label> <input type="file" name="pic" accept="image/*" id="foto" required>
+					<label for="foto">Foto de perfil:</label> <input type="file" name="pic" accept="image/*" id="foto" required>
 				</p>
 				<p>
-
-					<input type="submit" value="Registrarme">
-
+					<input type="submit" value="Registrarme" class="centrado">
 				</p>
 			</fieldset>
 		</form>
@@ -59,9 +66,6 @@
 			&copy; Blanca Vázquez Paredes y Yolanda Cruz Girona
 		</footer>
 
-
 	</body>
-
-
 
 </html>
