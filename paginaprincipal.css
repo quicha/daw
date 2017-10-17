@@ -20,6 +20,10 @@ clear: both;
 float: left;
 }
  
+section{
+	width: 100%;
+	display: table;
+}
 
  
 li img:hover {
@@ -30,8 +34,8 @@ li img:hover {
 header {
     background-color: #262626;
     color: black;
-    display: block;
-    position: absolute;
+    /*display: block;*/
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,14 +45,33 @@ header {
 	margin: 0 auto;
 }
 
+.navegando{
+
+
+	display: table;
+}
+
 ul.navegacion {
     list-style-type: none;
-	display:block;
+	/*display:block;*/
+	padding: 0;
+	margin: 0;
 	float:none;
     overflow: hidden;
     background-color: rgba(252, 95, 5, 0.8);
 	padding-left: 10px;	
 
+}
+
+
+#registrate{
+
+	float: right;
+}
+
+#menudelusuario{
+
+	float:right;
 }
 
 .foticos{
@@ -96,9 +119,10 @@ li p {
 body{
 
 font-family: Arial, sans-serif;
-margin: 250px 0px 30px; /*los 30 px justo va a ser lo que ocupa el footer, NO CAMBIAR*/
+margin: 0px 0px 30px; /*los 30 px justo va a ser lo que ocupa el footer, NO CAMBIAR*/
 background-attachment: fixed;
 background-color: #DBD6D0;
+height: 100%;
 /*background-image: url("backgroundoriginal.jpg");*/
 
 }
@@ -140,17 +164,23 @@ fieldset{
 	width: 40%;
 	background-color: rgba(252, 95, 5, 0.7);
 	display: block;
-    margin: auto;
+	margin: auto;
+  
 }
+
 
 /*Alineacion del formulario*/
 
 form {
 
     width: auto;
-   	margin: auto;
-	
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:auto;
+    margin-bottom: 1em;
+
 }
+
 
 form label {
 
@@ -163,7 +193,6 @@ form label {
 	
 	float:right;
 	clear: both;
-	position:relative;
 	right: 10px;
 	
 }
@@ -239,7 +268,7 @@ input[type=radio]{
 }
 
 
-h2{
+/*h2{
 	
 	text-align: center;
 	display: block;
@@ -250,17 +279,17 @@ h2{
     margin-right: 0;
     font-weight: bold;	
 	
-}
+}*/
 
 .titulos{
 	
 	text-align: center;
-	display: block;
+	/*display: block;*/
 	margin-top: -4em;
 	color: rgba(252, 95, 5, 1);
 	font: DejaVu Sans;
 	margin: 0 auto;
-	clear: left;
+	clear: right;
 	
 	
 	
@@ -278,8 +307,10 @@ footer {
     width: 100%;
     bottom: 0;
     position: absolute;
-    height: 20px;
-    margin-top: 2em;
+    height: 30px;
+    margin-top: 0;
+   
+
 }
 
 
@@ -296,7 +327,7 @@ header.titulo{
 	
 	border: 2px solid #939393;
 	color: black;
-	width: 800px;
+	width: auto;
 	margin: 0 auto;
 }
 
