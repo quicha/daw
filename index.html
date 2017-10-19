@@ -6,9 +6,9 @@
 
 		<meta charset="utf-8" />
 		<title>PICSY-Página principal</title>
-		<link rel="stylesheet" type="text/css" href="paginaprincipal.css">
-		<link rel="alternate stylesheet" type="text/css" href="accesible.css" 
-		title="Estilo accesible" />
+	    <link rel="stylesheet" type="text/css" href="paginaprincipal.css" title="Estilo principal" media="screen">
+		<link rel="stylesheet" type="text/css" href="impresion.css" title="Estilo para imprimir" media="print" >
+		<link rel="alternate stylesheet" type="text/css" href="accesible.css" title="Estilo accesible">
 
 	</head>
 
@@ -17,7 +17,7 @@
 
 		<header>
 
-			<a href="index.html"><img id="logo" src="logoaccesible.png" alt="Logotipo de PICSY"></a>
+			<a href="index.html" ><img id="logo" src="logoaccesible.png" alt="Logotipo de PICSY"></a>
 
 		</header>
 
@@ -36,7 +36,7 @@
 				
 				</li>
 				<li id="registrate"><a href="registro.html">Regístrate</a></li>
-				<li id="busqueda"><a href="busqueda.html">Búsqueda avanzada</a></li>
+				<li id="avanzada"><a href="busqueda.html">Búsqueda avanzada</a></li>
 			</ul>
 
 		</section>
@@ -46,6 +46,7 @@
 			<form name="login" id="login" action="index-registrado.html">
 				<fieldset>
 					<legend id="iniciarsesion">Iniciar sesión</legend>
+					<p>
 					<label for="usuario" id="usu">Usuario:</label> <input type="text" id="usuario" required  >
 					</p>
 					<p>
@@ -55,13 +56,12 @@
 					<input type="submit" id="entrar" class="centrado" value="Entrar">
 				</fieldset>
 			</form>
-			
 			<ul class="foticos">
-			    <li><a href="detallefoto.html"><img src="paisaje1.jpg" alt="Paseo otoñal" /></a><p></p><p><b>Paseo otoñal</b></p><p>25/11/2015,Bélgica</p></li>
-			    <li><a href="detallefoto.html"><img src="paisaje2.jpg" alt="Montañas" /></a><p></p><p><b>Paseo otoñal</b></p><p>25/11/2015,Bélgica</p></li>
-			    <li><a href="detallefoto.html"><img src="paisaje3.jpg" alt="Paisaje al atardecer" /></a><p></p><p><b>Paseo otoñal</b></p><p>25/11/2015, Bélgica</p></li>
-			    <li><a href="detallefoto.html"><img src="paisaje4.jpg" alt="Ladera verde" /></a><p></p><p><b>Paseo otoñal</b></p><p>25/11/2015,Bélgica</p></li>
-			    <li><a href="detallefoto.html"><img src="paisaje5.jpg" alt="Playa al amanecer"/></a><p></p><p><b>Paseo otoñal</b></p><p>25/11/2015,Bélgica</p></li>
+			    <li><a href="detallefoto.html"><img src="paisaje1.jpg" alt="Paseo otoñal" /></a><p>Paseo otoñal</p><p>25/11/2015,Bélgica</p></li>
+			    <li><a href="detallefoto.html"><img src="paisaje2.jpg" alt="Montañas" /></a><p>Paseo otoñal</p><p>25/11/2015,Bélgica</p></li>
+			    <li><a href="detallefoto.html"><img src="paisaje3.jpg" alt="Montañas verdes" /></a><p>Paseo otoñal</p><p>25/11/2015,Bélgica</p></li>
+			    <li><a href="detallefoto.html"><img src="paisaje4.jpg" alt="Ladera verde" /></a><p>Paseo otoñal</p><p>25/11/2015,Bélgica</p></li>
+			    <li><a href="detallefoto.html"><img src="paisaje5.jpg" alt="Playa al amanecer"/></a><p>Paseo otoñal</p><p>25/11/2015,Bélgica</p></li>
 		 	</ul>
 
 		</section>
